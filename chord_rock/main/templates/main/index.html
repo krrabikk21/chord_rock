@@ -1,6 +1,16 @@
 <!DOCTYPE html>
+{%  load static %}.
+
 <html lang="ru">
 <head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Dela+Gothic+One&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="Viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
@@ -8,17 +18,17 @@
 </head>
 <body>
     <div style="width: 100%; height: 100%; position: relative; background: #C9C7C2">
-        <img style="width: 732px; height: 943px; left: 739px; top: 70px; position: absolute; border-radius: 35px" src="https://via.placeholder.com/732x943" />
-        <div style="width: 1440px; height: 133px; left: 0px; top: -32px; position: absolute; background: #48362F"></div>
+        <img style="width: 732px; height: 943px; left: 739px; top: 70px; position: absolute; border-radius: 35px" src="{% static "main/img/guitar-music-outdoors 2.png" %}"/>
+        <div style="width: 100%; height: 133px; left: 0px; top: -32px; position: absolute; background: #48362F"></div>
         <div style="width: 75px; height: 31px; left: 777px; top: 70px; position: absolute; color: white; font-size: 24px; font-family: Andika; font-weight: 400; line-height: 24px; letter-spacing: 0.50px; word-wrap: break-word">О нас</div>
         <div style="width: 121px; height: 37px; left: 956px; top: 70px; position: absolute; color: white; font-size: 24px; font-family: Andika; font-weight: 400; line-height: 24px; letter-spacing: 0.50px; word-wrap: break-word">Профиль</div>
         <div style="width: 111px; height: 38px; left: 591px; top: 69px; position: absolute; color: white; font-size: 24px; font-family: Andika; font-weight: 400; line-height: 24px; letter-spacing: 0.50px; word-wrap: break-word">Главная</div>
         <div style="width: 463px; height: 44px; left: 5px; top: 37px; position: absolute; color: white; font-size: 48px; font-family: Dela Gothic One; font-weight: 400; line-height: 24px; letter-spacing: 0.50px; word-wrap: break-word">CHORDS ROCK</div>
         <div style="width: 713px; height: 91px; left: 13px; top: 144px; position: absolute; color: #48362F; font-size: 36px; font-family: Dela Gothic One; font-weight: 400; line-height: 39px; letter-spacing: 0.50px; word-wrap: break-word">БЕСПЛАТНЫЕ УРОКИ ИГРЫ НА ГИТАРЕ ДЛЯ НОВИЧКОВ</div>
-        <div style="width: 390px; height: 103px; left: 13px; top: 372px; position: absolute; color: #48362F; font-size: 36px; font-family: Dela Gothic One; font-weight: 400; line-height: 39px; letter-spacing: 0.50px; word-wrap: break-word">Теория<br/></div>
-        <div style="width: 399px; height: 103px; left: 13px; top: 521px; position: absolute; color: #48362F; font-size: 36px; font-family: Dela Gothic One; font-weight: 400; line-height: 39px; letter-spacing: 0.50px; word-wrap: break-word">Аккорды</div>
-        <div style="width: 399px; height: 103px; left: 13px; top: 670px; position: absolute; color: #48362F; font-size: 36px; font-family: Dela Gothic One; font-weight: 400; line-height: 39px; letter-spacing: 0.50px; word-wrap: break-word">Пентатоники</div>
-        <div style="width: 305px; height: 113px; left: 13px; top: 819px; position: absolute; color: #48362F; font-size: 36px; font-family: Dela Gothic One; font-weight: 400; line-height: 39px; letter-spacing: 0.50px; word-wrap: break-word">Метроном</div>
+        <button onclick="window.location='/theory'" style="border: none; background-color: transparent; height: 103px; left: 1px; top: 372px; position: absolute; color: #48362F; font-size: 36px; font-family: Dela Gothic One; font-weight: 400; line-height: 39px; letter-spacing: 0.50px; word-wrap: break-word">Теория<br/></div>
+        <button onclick="window.location='/chords'" style="border: none; background-color: transparent; height: 103px; left: 10px; top: 521px; position: absolute; color: #48362F; font-size: 36px; font-family: Dela Gothic One; font-weight: 400; line-height: 39px; letter-spacing: 0.50px; word-wrap: break-word">Аккорды</div>
+        <button onclick="window.location='/pentatonix'" style="border: none; background-color: transparent; height: 90px; left: 10px; top: 670px; position: absolute; color: #48362F; font-size: 36px; font-family: Dela Gothic One; font-weight: 400; line-height: 39px; letter-spacing: 0.50px; word-wrap: break-word">Пентатоники</div>
+        <button onclick="window.location='/metronome'" style="border: none; background-color: transparent; height: 113px; left: 0.50pxpx; top: 799px; position: absolute; color: #48362F; font-size: 36px; font-family: Dela Gothic One; font-weight: 400; line-height: 39px; letter-spacing: 0.50px; word-wrap: break-word">Метроном</button>
     </div>
 </body>
 </html>

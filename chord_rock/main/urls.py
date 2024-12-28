@@ -5,5 +5,6 @@ urlpatterns = [
     path('', views.index),
     path('theory', views.theory),
     path('chords', views.chords),
-    path('pentatonix', views.pentatonix)
+    path('pentatonix', views.pentatonix),
+    path('metronome', views.metronome),
 ]

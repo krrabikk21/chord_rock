@@ -1,17 +1,31 @@
 <!DOCTYPE html>
+{% extends "main/base.html" %}
+{% load static %}.
+{% block content %}
 <html lang="ru">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Dela+Gothic+One&family=Didact+Gothic&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Dela+Gothic+One&family=Didact+Gothic&display=swap" rel="stylesheet">
+
     <meta charset="UTF-8">
     <meta name="Viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <title>ChordRock</title>
+    <style>
+        body {margin:0; padding:0; margin-top: 101px;}
+    </style>
 </head>
 <body>
-    <div style="width: 100%; height: 100%; position: relative; background: #C9C7C2">
-        <img style="width: 200px; height: 200px; left: 258px; top: 3064px; position: absolute" src="https://via.placeholder.com/200x200" />
-        <div style="width: 468px; height: 75px; left: 40px; top: 0px; position: absolute; color: #48362F; font-size: 64px; font-family: Dela Gothic One; font-weight: 400; line-height: 56px; letter-spacing: 0.50px; word-wrap: break-word">Аккорды</div>
+    <div style="width: 100%; height: 100%; position: relative; background: #C9C7C2" >
+        <img style="width: 200px; height: 200px; left: 258px; top: 3064px; position: absolute" src="{%static "main/img/аккорд а.png" %}" />
+        <div style="width: 468px; height: 75px; left: 40px; top: 120px; position: absolute; color: #48362F; font-size: 64px; font-family: Dela Gothic One; font-weight: 400; line-height: 56px; letter-spacing: 0.50px; word-wrap: break-word">Аккорды</div>
         <div style="width: 654px; height: 110px; left: 393px; top: 159px; position: absolute; text-align: center"><span style="color: #48362F; font-size: 24px; font-family: Dela Gothic One; font-weight: 400; line-height: 19px; letter-spacing: 0.50px; word-wrap: break-word">Аккорд на гитаре</span><span style="color: black; font-size: 24px; font-family: Didact Gothic; font-weight: 400; line-height: 19px; letter-spacing: 0.50px; word-wrap: break-word"> — это сочетание трёх или более разных звуков, которые происходят одновременно.<br/><br/>Чаще всего аккорды состоят из троезвучий, то есть в этот момент три пальца зажимают три разные струны для аккорда. <br/><br/><br/><br/></span></div>
-        <img style="width: 882px; height: 406px; left: 279px; top: 839px; position: absolute; border-radius: 21px" src="https://via.placeholder.com/882x406" />
+        <img style="width: 882px; height: 406px; left: 279px; top: 839px; position: absolute; border-radius: 21px" src="{% static "main/img/guitar1.png" %}" />
         <div style="width: 1028px; height: 134px; left: 206px; top: 705px; position: absolute; text-align: center; color: #48362F; font-size: 32px; font-family: Dela Gothic One; font-weight: 400; line-height: 66px; letter-spacing: 0.50px; word-wrap: break-word">Как прочитать аплекатуру аккорда</div>
         <div style="width: 947px; height: 325px; left: 246px; top: 353px; position: absolute; text-align: center"><span style="color: #48362F; font-size: 24px; font-family: Dela Gothic One; font-weight: 400; line-height: 19px; letter-spacing: 0.50px; word-wrap: break-word">Аккорды разделяются на минорные и мажорные.</span><span style="color: black; font-size: 24px; font-family: Didact Gothic; font-weight: 400; line-height: 19px; letter-spacing: 0.50px; word-wrap: break-word"> <br/><br/>На письме первый тип обозначается с буквой </span><span style="color: #48362F; font-size: 24px; font-family: Dela Gothic One; font-weight: 400; line-height: 19px; letter-spacing: 0.50px; word-wrap: break-word">m</span><span style="color: black; font-size: 24px; font-family: Didact Gothic; font-weight: 400; line-height: 19px; letter-spacing: 0.50px; word-wrap: break-word"> на конце — например, </span><span style="color: #48362F; font-size: 24px; font-family: Dela Gothic One; font-weight: 400; line-height: 19px; letter-spacing: 0.50px; word-wrap: break-word">Am, Em,</span><span style="color: black; font-size: 24px; font-family: Didact Gothic; font-weight: 400; line-height: 19px; letter-spacing: 0.50px; word-wrap: break-word"> а второй тип — без неё, например, </span><span style="color: #48362F; font-size: 24px; font-family: Dela Gothic One; font-weight: 400; line-height: 19px; letter-spacing: 0.50px; word-wrap: break-word">A</span><span style="color: black; font-size: 24px; font-family: Didact Gothic; font-weight: 400; line-height: 19px; letter-spacing: 0.50px; word-wrap: break-word"> или </span><span style="color: #48362F; font-size: 24px; font-family: Dela Gothic One; font-weight: 400; line-height: 19px; letter-spacing: 0.50px; word-wrap: break-word">E</span><span style="color: black; font-size: 24px; font-family: Didact Gothic; font-weight: 400; line-height: 19px; letter-spacing: 0.50px; word-wrap: break-word">.<br/> Отличаются они между собой по характеру звучания — минорные аккорды звучат печально, грустно, и характерны для грустных и лиричных песен, в то время как мажорные — торжественно и помпезно, и характерны для весёлых шутливых композиций. </span></div>
         <div style="width: 920px; height: 134px; left: 260px; top: 1347px; position: absolute; text-align: center; color: #48362F; font-size: 32px; font-family: Dela Gothic One; font-weight: 400; line-height: 22px; letter-spacing: 0.50px; word-wrap: break-word">Для взятия аккордов на гитаре рекомендуется:</div>
@@ -19,28 +33,30 @@
         <div style="width: 1370px; height: 186px; left: 35px; top: 2454px; position: absolute; text-align: center; color: black; font-size: 24px; font-family: Didact Gothic; font-weight: 400; line-height: 19px; letter-spacing: 0.50px; word-wrap: break-word">Также можно представлять в уме, как ставить пальцы на следующий аккорд ещё до того, как его пора брать. <br/>Для более глубокого освоения игры на гитаре рекомендуется обратиться к преподавателю.</div>
         <div style="width: 781px; height: 97px; left: 329px; top: 2563px; position: absolute; text-align: center; color: #48362F; font-size: 40px; font-family: Dela Gothic One; font-weight: 400; line-height: 40px; letter-spacing: 0.50px; word-wrap: break-word">Список аккордов для начинающих</div>
         <div style="width: 363px; height: 66px; left: 258px; top: 2716px; position: absolute; color: black; font-size: 32px; font-family: Didact Gothic; font-weight: 400; line-height: 40px; letter-spacing: 0.50px; word-wrap: break-word">Аккорд Am – Ля минор</div>
-        <img style="width: 200px; height: 200px; left: 258px; top: 2782px; position: absolute" src="https://via.placeholder.com/200x200" />
+        <img style="width: 200px; height: 200px; left: 258px; top: 2782px; position: absolute" src="{%static "main/img/аккорд ам 1.png" %}" />
         <div style="width: 776px; height: 138px; left: 458px; top: 2813px; position: absolute; color: black; font-size: 20px; font-family: Didact Gothic; font-weight: 400; line-height: 27px; letter-spacing: 0.50px; word-wrap: break-word">Это трезвучие состоит из трех нот – Ля, До и Ми. Этот аккорд присутствует в огромном количестве песен, и каждый гитарист начинал именно с него.</div>
         <div style="width: 322px; height: 51px; left: 258px; top: 3013px; position: absolute; color: black; font-size: 32px; font-family: Didact Gothic; font-weight: 400; line-height: 27px; letter-spacing: 0.50px; word-wrap: break-word">Аккорд A – Ля мажор</div>
         <div style="width: 918px; height: 87px; left: 458px; top: 3095px; position: absolute; color: black; font-size: 20px; font-family: Didact Gothic; font-weight: 400; line-height: 27px; letter-spacing: 0.50px; word-wrap: break-word">Менее популярный аккорд, который, тем не менее, присутствует в огромном количестве знакомых всем песен. Он состоит из нот Ля, Ми и До Диез.</div>
         <div style="width: 363px; height: 41px; left: 258px; top: 3295px; position: absolute; color: black; font-size: 32px; font-family: Didact Gothic; font-weight: 400; line-height: 27px; letter-spacing: 0.50px; word-wrap: break-word">Аккорд D – Ре Мажор<br/></div>
-        <img style="width: 200px; height: 200px; left: 263px; top: 3346px; position: absolute" src="https://via.placeholder.com/200x200" />
+        <img style="width: 200px; height: 200px; left: 263px; top: 3346px; position: absolute" src="{%static "main/img/аккорд д.png" %}" />
         <div style="width: 555px; height: 86px; left: 463px; top: 3371px; position: absolute; color: black; font-size: 20px; font-family: Didact Gothic; font-weight: 400; line-height: 27px; letter-spacing: 0.50px; word-wrap: break-word">Этот аккорд состоит из нот Ре, Фа Диез и Ля.</div>
         <div style="width: 368px; height: 83px; left: 258px; top: 3577px; position: absolute; color: black; font-size: 32px; font-family: Didact Gothic; font-weight: 400; line-height: 27px; letter-spacing: 0.50px; word-wrap: break-word">Аккорд Dm – Ре Минор<br/></div>
-        <img style="width: 200px; height: 200px; left: 253px; top: 3628px; position: absolute" src="https://via.placeholder.com/200x200" />
+        <img style="width: 200px; height: 200px; left: 253px; top: 3628px; position: absolute" src="{%static "main/img/аккорд дм.png" %}" />
         <div style="width: 810px; height: 168px; left: 443px; top: 3653px; position: absolute; color: black; font-size: 20px; font-family: Didact Gothic; font-weight: 400; line-height: 27px; letter-spacing: 0.50px; word-wrap: break-word">Это трезвучие похоже по своему составу на предыдущее, лишь с одним изменением – оно состоит из нот Ре, Фа и Ля.<br/></div>
         <div style="width: 335px; height: 104px; left: 253px; top: 3859px; position: absolute; color: black; font-size: 32px; font-family: Didact Gothic; font-weight: 400; line-height: 27px; letter-spacing: 0.50px; word-wrap: break-word">Аккорд E – Ми Мажор<br/></div>
-        <img style="width: 200px; height: 200px; left: 263px; top: 3895px; position: absolute" src="https://via.placeholder.com/200x200" />
+        <img style="width: 200px; height: 200px; left: 263px; top: 3895px; position: absolute" src="{%static "main/img/аккорд е.png" %}" />
         <div style="width: 811px; height: 183px; left: 442px; top: 3915px; position: absolute; color: black; font-size: 20px; font-family: Didact Gothic; font-weight: 400; line-height: 27px; letter-spacing: 0.50px; word-wrap: break-word">Один из самых популярных аккордов даже в метал музыке – поскольку хорошо звучит на электрогитаре. Состоит из нот Ми, Си, Соль Диез.<br/></div>
         <div style="width: 378px; height: 57px; left: 253px; top: 4129px; position: absolute; color: black; font-size: 32px; font-family: Didact Gothic; font-weight: 400; line-height: 27px; letter-spacing: 0.50px; word-wrap: break-word">Аккорд Em – Ми Минор<br/></div>
-        <img style="width: 200px; height: 200px; left: 258px; top: 4173px; position: absolute" src="https://via.placeholder.com/200x200" />
+        <img style="width: 200px; height: 200px; left: 258px; top: 4173px; position: absolute" src="{%static "main/img/аккорд ем.png" %}" />
         <div style="width: 811px; height: 78px; left: 442px; top: 4221px; position: absolute; color: black; font-size: 20px; font-family: Didact Gothic; font-weight: 400; line-height: 27px; letter-spacing: 0.50px; word-wrap: break-word">Еще один популярный аккорд для начинающих, который по частоте использования может соперничать с Am. Состоит из нот Ми, Си, Соль.<br/></div>
         <div style="width: 391px; height: 52px; left: 253px; top: 4426px; position: absolute; color: black; font-size: 32px; font-family: Didact Gothic; font-weight: 400; line-height: 27px; letter-spacing: 0.50px; word-wrap: break-word">Аккорд C – До Мажор<br/></div>
-        <img style="width: 200px; height: 200px; left: 258px; top: 4476px; position: absolute" src="https://via.placeholder.com/200x200" />
+        <img style="width: 200px; height: 200px; left: 258px; top: 4476px; position: absolute" src="{%static "main/img/аккорд с.png" %}" />
         <div style="width: 800px; height: 143px; left: 442px; top: 4512px; position: absolute"><span style="color: black; font-size: 20px; font-family: Didact Gothic; font-weight: 400; line-height: 27px; letter-spacing: 0.50px; word-wrap: break-word">Более сложный аккорд, особенно в комбинации с некоторыми, однако стоит немного потренироваться и поделать </span><span style="color: black; font-size: 20px; font-family: Didact Gothic; font-weight: 400; text-decoration: underline; line-height: 27px; letter-spacing: 0.50px; word-wrap: break-word">упражнения</span><span style="color: black; font-size: 20px; font-family: Didact Gothic; font-weight: 400; line-height: 27px; letter-spacing: 0.50px; word-wrap: break-word"> – и он окажется таким же простым, как и остальные. Состоит из нот До, Ми и Соль</span></div>
         <div style="width: 364px; height: 52px; left: 253px; top: 4718px; position: absolute; color: black; font-size: 32px; font-family: Didact Gothic; font-weight: 400; line-height: 27px; letter-spacing: 0.50px; word-wrap: break-word">Аккорд G – Соль Мажор<br/></div>
-        <img style="width: 200px; height: 200px; left: 263px; top: 4780px; position: absolute" src="https://via.placeholder.com/200x200" />
+        <img style="width: 200px; height: 200px; left: 263px; top: 4780px; position: absolute" src="{%static "main/img/аккорд гэ.png" %}" />
         <div style="width: 653px; height: 135px; left: 442px; top: 4804px; position: absolute; color: black; font-size: 20px; font-family: Didact Gothic; font-weight: 400; line-height: 27px; letter-spacing: 0.50px; word-wrap: break-word">Состоит из нот Соль, Си, Ре.<br/></div>
     </div>
 </body>
 </html>
+
+{% endblock content %}

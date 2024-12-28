@@ -8,3 +8,5 @@ def chords(request):
     return render(request, "main/chords.html")
 def pentatonix(request):
     return render(request, "main/pentatonix.html")
+def metronome(request):
+    return render(request, "main/metronome.html")

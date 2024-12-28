@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+{% extends "main/base.html" %}
+{% load static %}
+{% block content %}
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
@@ -8,29 +11,29 @@
 </head>
 <body>
     <div style="width: 100%; height: 100%; position: relative; background: #C9C7C2">
-        <div style="width: 810px; height: 174px; left: 315px; top: 36px; position: absolute; text-align: center; color: #48362F; font-size: 64px; font-family: Dela Gothic One; font-weight: 400; word-wrap: break-word">Пентатоники</div>
+        <div style="width: 810px; height: 174px; left: 315px; top: 140px; position: absolute; text-align: center; color: #48362F; font-size: 64px; font-family: Dela Gothic One; font-weight: 400; word-wrap: break-word">Пентатоники</div>
         <div style="width: 917px; height: 69px; left: 261px; top: 220px; position: absolute; text-align: center"><span style="color: #48362F; font-size: 24px; font-family: Dela Gothic One; font-weight: 400; line-height: 19px; letter-spacing: 0.50px; word-wrap: break-word">Пентатоника</span><span style="color: black; font-size: 24px; font-family: Didact Gothic; font-weight: 400; line-height: 19px; letter-spacing: 0.50px; word-wrap: break-word"> – это особый тип гамм, которые часто используются в блюзовой музыке и кантри. Они представляют собой классические последовательности нот, однако из которых были удалены две ступени</span></div>
         <div style="width: 1021px; height: 157px; left: 221px; top: 355px; position: absolute; text-align: center; color: black; font-size: 24px; font-family: Didact Gothic; font-weight: 400; line-height: 21px; letter-spacing: 0.50px; word-wrap: break-word">Построение пентатоники происходит по принципу любой гаммы:<br/><br/> ноты выстраиваются друг за другом по принципу минора или мажора. Однако в этом построении убираются две ступени, то есть две ноты. <br/><br/>Для мажорной пентатоники нужно убрать четвёртую и седьмую ступени.  Для минорной — вторую и шестую.  В результате получается пять нот вместо семи: до, ре, ми, соль, ля.</div>
         <div style="width: 919px; height: 238px; left: 260px; top: 1161px; position: absolute; text-align: center"><span style="color: #48362F; font-size: 24px; font-family: Dela Gothic One; font-weight: 400; line-height: 21px; letter-spacing: 0.50px; word-wrap: break-word">Пентатоника 5 позиций на гитаре<br/></span><span style="color: black; font-size: 24px; font-family: Didact Gothic; font-weight: 400; line-height: 21px; letter-spacing: 0.50px; word-wrap: break-word"><br/><br/>Как уже было сказано выше, пентатонику проще всего учить по боксам, так же, как и </span><span style="color: black; font-size: 24px; font-family: Didact Gothic; font-weight: 400; text-decoration: underline; line-height: 21px; letter-spacing: 0.50px; word-wrap: break-word">гамму соль-мажор</span><span style="color: black; font-size: 24px; font-family: Didact Gothic; font-weight: 400; line-height: 21px; letter-spacing: 0.50px; word-wrap: break-word">, а также другие тоники. Всего этих позиций пять на двенадцать ладов, после чего они повторяются, но на октаву выше. Кроме того, для пентатоники так же действует принцип параллельных тональностей. То есть, для пентатоники ля-минор так же подойдут боксы пентатоники До-мажор, и так далее.</span></div>
-        <img style="width: 713px; height: 426px; left: 720px; top: 550px; position: absolute; border-radius: 24px" src="https://via.placeholder.com/713x426" />
-        <img style="width: 750px; height: 170px; left: 345px; top: 1399px; position: absolute; border-radius: 15px" src="https://via.placeholder.com/750x170" />
+        <img style="width: 713px; height: 426px; left: 720px; top: 550px; position: absolute; border-radius: 24px" src="{% static "main/img/top-view-guitar 1.png" %}" />
+        <img style="width: 750px; height: 170px; left: 345px; top: 1399px; position: absolute; border-radius: 15px" src="{% static "main/img/пентатоники.png" %}" />
         <div style="width: 873px; height: 43px; left: 283px; top: 1634px; position: absolute; text-align: center; color: #48362F; font-size: 24px; font-family: Dela Gothic One; font-weight: 400; line-height: 21px; letter-spacing: 0.50px; word-wrap: break-word">Минорная пентатоника на гитаре – «Ля-минор»</div>
-        <img style="width: 220px; height: 652px; left: 1046px; top: 1677px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border-radius: 25px" src="https://via.placeholder.com/220x652" />
+        <img style="width: 220px; height: 652px; left: 1046px; top: 1677px; position: absolute; transform: rotate(90deg); transform-origin: 0 0; border-radius: 25px" src="{% static "main/img/струны.png" %}" />
         <div style="width: 883px; height: 95px; left: 278px; top: 1980px; position: absolute; text-align: center; color: black; font-size: 24px; font-family: Didact Gothic; font-weight: 400; line-height: 21px; letter-spacing: 0.50px; word-wrap: break-word">Минорная пентатоника на гитаре в тональности ля-минор строится так: нужно вспомнить любую из аппликатур гаммы ля-минор и сыграть её без второй и шестой ступени.</div>
         <div style="width: 347px; height: 65px; left: 294px; top: 2083px; position: absolute; text-align: center; color: black; font-size: 24px; font-family: Didact Gothic; font-weight: 400; line-height: 21px; letter-spacing: 0.50px; word-wrap: break-word">1 позиция<br/>Ноты A — C — D — E — G</div>
-        <img style="width: 768px; height: 162px; left: 336px; top: 2140px; position: absolute; border-radius: 10px" src="https://via.placeholder.com/768x162" />
+        <img style="width: 768px; height: 162px; left: 336px; top: 2140px; position: absolute; border-radius: 10px" src="{%static "main/img/1 позиция.png" %}" />
         <div style="width: 298px; height: 31px; left: 319px; top: 2475px; position: absolute; text-align: center; color: black; font-size: 24px; font-family: Didact Gothic; font-weight: 400; line-height: 21px; letter-spacing: 0.50px; word-wrap: break-word">2 позиция</div>
-        <img style="width: 768px; height: 164px; left: 336px; top: 2520px; position: absolute; border-radius: 10px" src="https://via.placeholder.com/768x164" />
+        <img style="width: 768px; height: 164px; left: 336px; top: 2520px; position: absolute; border-radius: 10px" src="{%static "main/img/2 позиция.png" %}" />
         <div style="width: 91px; height: 13px; left: 1009px; top: 2250px; position: absolute; background: white; border: 1px solid"></div>
         <div style="width: 89.50px; height: 13px; left: 1007.50px; top: 2633.50px; position: absolute; background: white; border: 1px solid"></div>
         <div style="width: 89.50px; height: 0px; left: 1007.50px; top: 2640.50px; position: absolute; border: 1px #6F6F6F solid"></div>
         <div style="width: 91px; height: 0px; left: 1009px; top: 2258.50px; position: absolute; border: 1px #6F6F6F solid"></div>
         <div style="width: 241px; height: 31px; left: 347px; top: 2857px; position: absolute; text-align: center; color: black; font-size: 24px; font-family: Didact Gothic; font-weight: 400; line-height: 21px; letter-spacing: 0.50px; word-wrap: break-word">3 позиция<br/></div>
-        <img style="width: 768px; height: 160px; left: 332px; top: 2896px; position: absolute; border-radius: 10px" src="https://via.placeholder.com/768x160" />
+        <img style="width: 768px; height: 160px; left: 332px; top: 2896px; position: absolute; border-radius: 10px" src="{%static "main/img/3 позиция.png" %}" />
         <div style="width: 252px; height: 31px; left: 336px; top: 3229px; position: absolute; text-align: center; color: black; font-size: 24px; font-family: Didact Gothic; font-weight: 400; line-height: 21px; letter-spacing: 0.50px; word-wrap: break-word">4 позиция</div>
         <div style="width: 241px; height: 31px; left: 336px; top: 3612px; position: absolute; text-align: center; color: black; font-size: 24px; font-family: Didact Gothic; font-weight: 400; line-height: 21px; letter-spacing: 0.50px; word-wrap: break-word">5 позиция</div>
-        <img style="width: 768px; height: 171px; left: 336px; top: 3268px; position: absolute; border-radius: 10px" src="https://via.placeholder.com/768x171" />
-        <img style="width: 768px; height: 164px; left: 332px; top: 3651px; position: absolute; border-radius: 10px" src="https://via.placeholder.com/768x164" />
+        <img style="width: 768px; height: 171px; left: 336px; top: 3268px; position: absolute; border-radius: 10px" src="{%static "main/img/4 позиция.png" %}" />
+        <img style="width: 768px; height: 164px; left: 332px; top: 3651px; position: absolute; border-radius: 10px" src="{%static "main/img/5 позиция.png" %}" />
         <div style="width: 91px; height: 13px; left: 1004px; top: 3005.50px; position: absolute; background: white; border: 1px solid"></div>
         <div style="width: 91px; height: 0px; left: 1004px; top: 3012.50px; position: absolute; border: 1px #747474 solid"></div>
         <div style="width: 90px; height: 12.50px; left: 1007.50px; top: 3387.50px; position: absolute; background: white; border: 1px solid"></div>
@@ -38,18 +41,20 @@
         <div style="width: 89.50px; height: 12.50px; left: 1010px; top: 3764.50px; position: absolute; background: white; border: 1px solid"></div>
         <div style="width: 91px; height: 0px; left: 1009.50px; top: 3771.50px; position: absolute; border: 1px #6F6F6F solid"></div>
         <div style="width: 1336px; height: 75px; left: 52px; top: 4000px; position: absolute; text-align: center; color: #48362F; font-size: 24px; font-family: Dela Gothic One; font-weight: 400; line-height: 21px; letter-spacing: 0.50px; word-wrap: break-word">Мажорная пентатоника на гитаре – «Соль-мажор»</div>
-        <img style="width: 220px; height: 643px; left: 398px; top: 4258px; position: absolute; transform: rotate(-90deg); transform-origin: 0 0; border-radius: 26px" src="https://via.placeholder.com/220x643" />
+        <img style="width: 220px; height: 643px; left: 398px; top: 4258px; position: absolute; transform: rotate(-90deg); transform-origin: 0 0; border-radius: 26px" src="{%static "main/img/musician-playing-guitar 1.png" %}" />
         <div style="width: 167px; height: 31px; left: 378px; top: 4411px; position: absolute; text-align: center; color: black; font-size: 24px; font-family: Didact Gothic; font-weight: 400; line-height: 21px; letter-spacing: 0.50px; word-wrap: break-word">1 схема<br/></div>
         <div style="width: 762px; height: 75px; left: 339px; top: 4305px; position: absolute; text-align: center; color: black; font-size: 24px; font-family: Didact Gothic; font-weight: 400; line-height: 21px; letter-spacing: 0.50px; word-wrap: break-word">это вариация минорной пентатоники, когда её третья позиция становится первой, и играется под тонику мажорной тональности. </div>
-        <img style="width: 768px; height: 163px; left: 336px; top: 4450px; position: absolute; border-radius: 9px" src="https://via.placeholder.com/768x163" />
+        <img style="width: 768px; height: 163px; left: 336px; top: 4450px; position: absolute; border-radius: 9px" src="{%static "main/img/1 схема.png" %}" />
         <div style="width: 163px; height: 31px; left: 380px; top: 4804px; position: absolute; text-align: center; color: black; font-size: 24px; font-family: Didact Gothic; font-weight: 400; line-height: 21px; letter-spacing: 0.50px; word-wrap: break-word">2 схема</div>
-        <img style="width: 768px; height: 160px; left: 336px; top: 4843px; position: absolute; border-radius: 10px" src="https://via.placeholder.com/768x160" />
+        <img style="width: 768px; height: 160px; left: 336px; top: 4843px; position: absolute; border-radius: 10px" src="{%static "main/img/2 схема.png" %}" />
         <div style="width: 144px; height: 31px; left: 390px; top: 5203px; position: absolute; text-align: center; color: black; font-size: 24px; font-family: Didact Gothic; font-weight: 400; line-height: 21px; letter-spacing: 0.50px; word-wrap: break-word">3 схема</div>
-        <img style="width: 768px; height: 163px; left: 339px; top: 5242px; position: absolute; border-radius: 10px" src="https://via.placeholder.com/768x163" />
+        <img style="width: 768px; height: 163px; left: 339px; top: 5242px; position: absolute; border-radius: 10px" src="{%static "main/img/3 схема.png" %}" />
         <div style="width: 206px; height: 31px; left: 336px; top: 5578px; position: absolute; text-align: center; color: black; font-size: 24px; font-family: Didact Gothic; font-weight: 400; line-height: 21px; letter-spacing: 0.50px; word-wrap: break-word">4 схема</div>
-        <img style="width: 768px; height: 164px; left: 336px; top: 5617px; position: absolute; border-radius: 10px" src="https://via.placeholder.com/768x164" />
+        <img style="width: 768px; height: 164px; left: 336px; top: 5617px; position: absolute; border-radius: 10px" src="{%static "main/img/4 схема.png" %}" />
         <div style="width: 154px; height: 31px; left: 362px; top: 5954px; position: absolute; text-align: center; color: black; font-size: 24px; font-family: Didact Gothic; font-weight: 400; line-height: 21px; letter-spacing: 0.50px; word-wrap: break-word">5 схема<br/></div>
-        <img style="width: 768px; height: 171px; left: 336px; top: 5993px; position: absolute; border-radius: 10px" src="https://via.placeholder.com/768x171" />
+        <img style="width: 768px; height: 171px; left: 336px; top: 5993px; position: absolute; border-radius: 10px" src="{%static "main/img/5 схема.png" %}" />
     </div>
 </body>
 </html>
+{% endblock content %}
+
